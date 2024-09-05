@@ -5,19 +5,70 @@
     <meta name="viewport" content= "width=devide-width, inical-scale=1.0">
     <link href="./styles.css" rel="stylesheet">
     <link href="bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">    
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>POA Pet Shop</title>  
 
-   
-  
-    
-
-    <title>POA Pet Shop</title>
-    
 <style>
+/*========inicial ================*/
 
+:root {
+
+    --Rosinha:rgb(249, 237, 249);
+    --Azulzinho:rgb(230, 248, 244);
+    --Amarelinho: rgb(244, 240, 223);
+    --Verdinho: rgb(219, 247, 226);    
+    --White: rgb(250, 250, 250);
+    --BlueGreish:#496E83;
+    --DarkBlue: rgb(21, 7, 52);
+
+
+    #confInicial{
+      background-color: var(--Azulzinho);      
+      color: var(--BlueGreish);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #confSobre{
+      background-color: var(--Rosinha);
+      color: var(--BlueGreish);
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+    #confProdutos{
+      background-color: var(--Azulzinho);
+    }
+
+    #confServicos{
+      background-color: var(--Rosinha);
+      color: var(--BlueGreish);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #confCadastro{
+      background-color: var(--Azulzinho);
+      color: var(--BlueGreish);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #confFale{
+      background-color: var(--Rosinha);
+      color: var(--BlueGreish);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #confFooter{
+      background-color: var(--Azulzinho);
+      color: var(--BlueGreish);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #confBottomFooter{
+      background-color: var(--White);
+      color: var(--BlueGreish);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+/*====inicial (final)======*/
 
 /*INICIO Nav.css*/
 {
@@ -37,7 +88,7 @@
 }
 
 .nav{
-    padding: 10px 10vw;
+    padding: 10px 410vw;
     display: flex;
     justify-content: space-between;
 }
@@ -53,7 +104,7 @@
 }
 
 .search{
-    width: 500px;
+    width: 1000px;
     display: flex;
 }
 
@@ -90,11 +141,11 @@
 }
 
 .nav-items a{
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .nav-items a img{
-    width: 30px;
+    width: 50px;
 }
 .links-container{
     width: 100%;
@@ -118,12 +169,9 @@
 .link:hover{
     opacity: 1;
 }
-
-
-
 /*FINAL Nav.css*/
     
-/*INÍCIO do estilo para o carrosel de imagens automatico */ 
+/*INÍCIO do estilo para o carrossel de imagens automatico */ 
 *{box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
@@ -188,321 +236,7 @@ img {vertical-align: middle;}
 }
 /*FIM do estilo do carossel automatico*/
 
-/*PRODUTO CSS - INICIO */
-.product{
-    position: relative;
-    overflow: hidden;
-    padding: 20px 0;
-}
 
-.product-category{
-    padding: 0 10vw;
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 40px;
-    text-transform: capitalize;
-}
-.product-container{
-    padding: 0 10vw;
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-
-.product-container::-webkit-scrollbar{
-    display: none;
-}
-
-.product-card{
-    flex: 0 0 auto;
-    width: 250px;
-    height: 450px;
-    margin-right: 40px;
-}
-
-.product-image{
-    position: relative;
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-}
-
-.product-thumb{
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
-
-.discount-tag{
-    position: absolute;
-    background: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    color: #ff7d7d;
-    right: 10px;
-    top: 10px;
-    text-transform: capitalize;
-}
-
-.card-btn{
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    width: 90%;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    background: #fff;
-    border-radius: 5px;
-    transition: 0.5s;
-    cursor: pointer;
-    opacity: 0;
-}
-
-.product-card:hover .card-btn{
-    opacity: 1;
-}
-
-.card-btn:hover{
-    background: #efefef;
-}
-
-.product-info{
-    width: 100%;
-    height: 100px;
-    padding-top: 10px;
-}
-
-.product-brand{
-    text-transform: uppercase;
-}
-
-.product-short-des{
-    width: 100%;
-    height: 20px;
-    line-height: 20px;
-    overflow: hidden;
-    opacity: 0.5;
-    text-transform: capitalize;
-    margin: 5px 0;
-}
-
-.price{
-    font-weight: 900;
-    font-size: 20px;
-}
-
-.actual-price{
-    margin-left: 20px;
-    opacity: 0.5;
-    text-decoration: line-through;
-    .pre-btn, .nxt-btn{
-    border: none;
-    width: 10vw;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
-    cursor: pointer;
-    z-index: 8;
-}
-
-.pre-btn{
-    left: 0;
-    transform: rotate(180deg);
-}
-
-.nxt-btn{
-    right: 0;
-}
-
-.pre-btn img, .nxt-btn img{
-    opacity: 0.2;
-}
-
-.pre-btn:hover img, .nxt-btn:hover img{
-    opacity: 1;
-}
-}
-.collection-container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-}
-
-.collection{
-    position: relative;
-}
-
-.collection img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.collection p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-    text-transform: capitalize;
-}
-
-.collection:nth-child(3){
-    grid-column: span 2;
-    margin-bottom: 10px;
-}
-.product-details{
-    width: 100%;
-    padding: 60px 10vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-.image-slider{
-    width: 500px;
-    height: 500px;
-    position: relative;
-    background-image: url('../img/product\ image\ 1.png');
-    background-size: cover;
-}
-
-.product-images{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    background: #fff;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: 100px;
-    grid-gap: 10px;
-    padding: 10px;
-}
-
-.product-images img{
-    width: 100%;
-    height: 80px;
-    object-fit: cover;
-    cursor: pointer;
-}
-
-.product-images img.active{
-    opacity: 0.5;
-}
-.details{
-    width: 50%;
-}
-
-.details .product-brand{
-    text-transform: capitalize;
-    font-size: 30px;
-}
-
-.details .product-short-des{
-    font-size: 25px;
-    line-height: 30px;
-    height: auto;
-    margin: 15px 0 30px;
-}
-
-.product-price{
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.product-actual-price{
-    font-size: 30px;
-    opacity: 0.5;
-    text-decoration: line-through;
-    margin: 0 20px;
-    font-weight: 300;
-}
-
-.product-discount{
-    color: #ff7d7d;
-    font-size: 20px;
-}
-
-.product-sub-heading{
-    font-size: 30px;
-    text-transform: uppercase;
-    margin: 60px 0 10px;
-    font-weight: 300;
-}
-
-.size-radio-btn{
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    font-size: 20px;
-    border: 1px solid #383838;
-    border-radius: 50%;
-    margin: 10px;
-    margin-left: 0;
-    line-height: 80px;
-    text-transform: uppercase;
-    color: #383838;
-    cursor: pointer;
-}
-
-.size-radio-btn.check{
-    background: #383838;
-    color: #fff;
-}
-
-.btn{
-    width: 48%;
-    padding: 20px;
-    border-radius: 5px;
-    background: none;
-    border: 1px solid #383838;
-    color: #383838;
-    font-size: 20px;
-    cursor: pointer;
-    margin: 20px 0;
-    text-transform: capitalize;
-}
-
-.cart-btn{
-    margin-right: 2%;
-    background: #383838;
-    color: #fff;
-}
-.detail-des{
-    padding: 0 10vw;
-    text-transform: capitalize;
-}
-
-.heading{
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-
-.des{
-    color: #383838;
-    line-height: 25px;
-}
-.product-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: auto;
-    grid-row-gap: 40px;
-}
-
-/*final PRODUTO CSS  */
 
 /*SEARCH CSS*/
 .search-results{
@@ -562,13 +296,7 @@ img {vertical-align: middle;}
   }
   
   
-  .css_inicial
-  {
-    background-color: rgb(238, 248, 246);
-  }
-
-
-    
+      
   .class_input_name
   {
         width: 300px;
@@ -594,7 +322,6 @@ img {vertical-align: middle;}
     }
 
 
- 
     table
     {
         font-family: Arial, Helvetica, sans-serif;
@@ -606,21 +333,20 @@ img {vertical-align: middle;}
     }
     thead
     {
-        background-color: rgb(0,0,0);
-        color:rgb(0, 0, 0);
+        background-color: var(--DarkBlue);
+        color: var(--White);
     }
     tr:nth-child(odd) /* odd = par */
     {
-        background-color: hsl(61, 65%, 81%);
+        background-color: hsl(262, 51%, 47%);
         height: 20px;
 
     }
     tr:nth-child(even) /* even = impar */
     {
-        background-color: #eecceb;
+        background-color: #f6cbf3;
         height: 20px;
     }      
-    
 
   /* INICIO FOOTER CSS   */
   footer{
@@ -692,7 +418,7 @@ img {vertical-align: middle;}
 }
 
 .social-link{
-    color: rgb(0, 0, 0);
+    color: rgb(74, 77, 218);
     margin-left: 20px;    
     text-transform: capitalize;
    
@@ -720,98 +446,94 @@ img {vertical-align: middle;}
 
   <body>
     <!--HEADER (CABEÇALHO:logo/slogan/banner da página): NAV (BARRA/MENU DE NAVEGAÇÃO)-->   
-    <section class="css_header">
-      <nav class="navbar">
-        <div class="nav">
-            <img src="logoPetShop.png" id="logo_site" class="brand-logo" alt="Logotivo POA Pet Shop com símbolos de teclado lembrando face de canino e felino, com coração" >           
-            <div class="nav-items">
-                <div class="search">
-                    <input type="text" class="search-box" placeholder="Busca produtos, serviços, ...">
-                    <button class="search-btn">Busca</button>
-                </div>
-                <a href="#"><img src="user_image.png" alt=""></a>
-                <a href="#"><img src="carrinho.png" alt=""></a>
-            </div>
-        </div>
-        <center>
-        <nav Class="navbarra">
-          <center>
-                <a href="./index.html">Página inicial</a>
-                <a href="./pages/sobre.html">Sobre nós</a> 
-                <a href="./pages/produtos.html">Produtos</a>  
-                <a href="./pages/servicos.html">Serviços</a>
-                <a href="./pages/cadastro.html">Meu cadastro</a>
-                <a href="./pages/login.html">Login</a>
-                <a href="./pages/faleconosco.html">Fale conosco</a>
-                <br><br>
-              </center>
-              </nav>
-        </center>
-      
-      <script>
-        const createNav = () => {
-          let nav = document.querySelector('.navbar');
-        }
-        createnav();
-      </script>
-    
-      
+    <header class="header">
+      <div class="container" id="confNavBar">
+        <nav>
+          <br>
+          <div class="logo">
+            <img src="logoPetShop.png" id="logo_site" class="brand-logo" alt="Logotivo POA Pet Shop com símbolos de teclado lembrando face de canino e felino, com coração">   
+          <br>
+          <a href="./index.html">Página inicial</a>
+          <a href="./pages/sobre.html">Sobre nós</a> 
+          <a href="./pages/produtos.html">Produtos</a>  
+          <a href="./pages/servicos.html">Serviços</a>
+          <a href="./pages/cadastro.html">Meu cadastro</a>          
+          <a href="./pages/faleconosco.html">Fale conosco</a>
+          <br><br>
+                   
+          <div class="nav-items">
+              <div class="search">
+                  <input type="text" class="search-box" placeholder="Busca produtos, serviços, ...">
+                  <button class="search-btn">Busca</button>
+              </div> 
+              <br>                            
+          </div>                   
+          
+          <script>
+            const createNav = () => {
+              let nav = document.querySelector('.navbar');
+            }
+            createnav();
+          </script>
+
+        </nav>
+      </div>    
+    </header>
     <!-- PÁGINA INICIAL-->
-    <section class= "css_inicial">
+    <section class= "css_inicial" id="confInicial">
       <div class="inicial-conteudo"></div>
-        <br><br>
-        <h2><center>Bem vindos à <br><br><strong>POA Pet Shop</strong></h2>          
-          <p> A mais queridinha LOJA VIRTUAL DE RAÇÕES CANINAS E FELINAS da Capital Gaúcha, com mais de 40 anos de experiência na prestação de SERVIÇOS de BANHO E TOSA,<br> agora com a facilidade de AGENDAMENTO ON-LINE e TAXI PET COM TUTOR.<a href="./pages/sobre.html"> Sobre nós... </a> </center></p>       
+        <br><br><br>
+        <h2><center>Bem vindos à <br><strong>POA Pet Shop</strong></h2>   
+          <center>       
+          <p> A mais queridinha LOJA VIRTUAL DE RAÇÕES CANINAS E FELINAS da Capital Gaúcha, com 15 anos de experiência na prestação de SERVIÇOS de BANHO E TOSA, agora com a facilidade de AGENDAMENTO ON-LINE e TAXI PET COM TUTOR.<a href="./pages/sobre.html"> Sobre nós... </a></p>
+          </center>       
       </div>
-    
+        <center>
         <div class="icons-container">
           <br><br>
           <button onclick="alerta()" class="btn btn-outline-primary">Loja Virtual de Ração Canina e Felina</button>
           <button onclick="alerta()" class="btn btn-outline-success">Agendamento On-line de Banho e Tosa</button>
           <br><br>
-        </div> 
-        
-          </div>
         </div>
-        <br><br>   
-        
-        <div class="col-sm-6">
+        </center>    
+        <div>
           <br><br>
           <center><img src ="canino_felino_no_campo.jpg" alt="canino e felino caminhando tranquilamente num dia claro, na grama, com arbores no fundo"</center>
-          <br><br><br>
+          <br><br><br><br>
         </div>
-       
-
 
     <!--SOBRE NÓS --> 
-    <section class="css.sobre">  
-      <br><br>
+    <section class="css.sobre" id="confSobre">  
+      <br>
       <div class="sobre-conteudo">
         <br><br>
         <h2><center>Sobre nós</center></h2>
         <center>
-        <div class="col-sm-6">
+        <div>
           <br>
           <img src ="pets_embelezados.jpg" alt="foto de dois caninos (poodle e gorgi)e dois felinos (brancos) embelezados, com fundo rosa claro"
           <br>
         </div> 
         </center>
         <br>
-        <p> <center>Nós da POA Pet Shop oferecemos produtos de alta qualidade para os Pets Caninos e Felinos,<br> com fácil e moderna plataforma on-line para venda de rações e respectiva entrega<br> na nossa querida cidade de Porto Alegre/RS, contando com um espaço moderno e climatizado para o <br>Banho e Tosa com a opção de Táxi Pet e Tutor. <br><br>Nossos serviços de cuidado e embelezamentos contam com profissionais dedicados e especializados, <br>inclusive aplicando técnicas organizacional e de maneja de forma a melhor servir seu Pet, <br>minimizando stress e auxiliando a recuperação de possíveis traumas anteriores.</center></p>
-        <br><br>
-        
+        <p> <center>Nós da POA Pet Shop oferecemos produtos de alta qualidade para os Pets Caninos e Felinos, com fácil e moderna plataforma on-line para venda de<a href="./pages/produtos.html"> rações </a> e respectiva entrega na nossa querida cidade de Porto Alegre/RS, contando com um espaço moderno e climatizado para o Banho e Tosa com a opção de Táxi Pet e Tutor. <br><br>Nossos<a href="./pages/servicos.html"> serviços </a>de cuidado e embelezamentos contam com profissionais dedicados e especializados, <br>inclusive aplicando técnicas organizacional e de maneja de forma a melhor servir seu Pet, minimizando stress e auxiliando a recuperação de possíveis traumas anteriores.</center></p>
+        <br><br> 
+      </div>      
         
     </section>
 
      <!--PRODUTOS -->
-    <section class="produtos"> 
+    <section class="produtos" id="confProdutos"> 
       <br><br>
       <br><br>
+      <center>
       <h2 class="product-category">Produtos: Loja Virtual de Rações</h2>
+      </center>
       <br><br>
       <center><h2>Terminou a ração? <br><h2></center> 
-      <center><p>Venha conferir a facilidade de compra e a rapidez da entrega da nossa  Loja de Rações Virtual e já proveites que estás on-line pra deixar agendado um Banho e Tosa tri legal pro pet amado, reservando pra vocês dois o Táxi Pet e Tutor para a ocasião!</p></center> 
-      <br><br>
+        <br><br>
+      <center><p>Venha conferir a facilidade de compra e a rapidez da entrega da nossa  Loja de Rações Virtual e já aproveites que estás on-line pra deixar agendado um<a href="./pages/sobre.html"> serviço </a>de Banho e Tosa tri legal pro pet amado, reservando pra vocês dois o Táxi Pet e Tutor para a ocasião!</p></center> 
+        <br><br>
       <!--CAROSSEL AUTOMÁTICO DE IMAGENS, mudanca no tempo programado (no caso, 3 segundos)-->    
       <div class="slideshow-container">
 
@@ -870,175 +592,28 @@ img {vertical-align: middle;}
       }
       </script>
       <br><br><br>
-
-        
+      <!-- fim do Carrossel de imagens--> 
       <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
-      <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
-      
-
-      <div class="product-container">
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">10% off</span>
-                <img src="racao_canina_seca1.jfif" class="product-thumb" alt="imagem de pacote de ração canina seca">
-                <button class="card-btn">Acrescente no seu pedido</button>
-
-                <span class="discount-tag">10% off</span>
-                <img src="racao_canina_seca2.jfif" class="product-thumb" alt="imagem de pacote de ração canina seca">
-                <button class="card-btn">Acrescente no seu pedido</button>
-
-                <span class="discount-tag">10% off</span>
-                <img src="racao_canina_umida.jfif" class="product-thumb" alt="imagem de lata de ração canina umida">
-                <button class="card-btn">Acrescente no seu pedido</button>
-
-                <span class="discount-tag">10% off</span>
-                <img src="racao_canina_umida_2.jfif" class="product-thumb" alt="imagem de lata de ração canina umida">
-                <button class="card-btn">Acrescente no seu pedido</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">Royal Canin</h2>
-                <p class="product-short-des">Ração Canina, Tipo de Apresentação Seca, Royal Canin Mini Indoor Adult para Cães com 10 Meses ou mais, pacote de  2,5 kg, da marca Royal Canin Cães.</p>
-                <span class="price">R$161.91</span><span class="actual-price">R$179.90</span>
-
-                <h2 class="product-brand">Premier Golden</h2>
-                <p class="product-short-des">Ração Canina, Tipo de Apresentação Seca, Ração Golden para Cães de Médio e Grande Porte, Adultos  Light, sabor frango e arroz, pacote de 15 KG, da Marca Premier Golden Cães.</p>
-                <span class="price">R$169.11</span><span class="actual-price">R$187.90</span>      
-
-                <h2 class="product-brand">Royal Canin</h2>
-                <p class="product-short-des">Ração Canina, Tipo de Apresentação Úmida, Patê Royal Canin Satiety Support Wet 410g.</p>
-                <span class="price">R$ 44.37</span><span class="actual-price">R$49,30</span>
-
-                <h2 class="product-brand">Royal Canina</h2>
-                <p class="product-short-des">Ração Canina, Tipo de Apresentação Úmida, Patê Royal Canin Veterinary Diet Hypoalergenic Wet para Cães - 400 g, marca Royal Canin Cães.</p>
-                <span class="price">R$52.56</span><span class="actual-price">R$58.40</span>     
-
-            </div>
-        </div>
-        +3 more cards
-      </div>
-      <script>
-        const productContainers = [...document.querySelectorAll('.product-container')];
-        const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-        const preBtn = [...document.querySelectorAll('.pre-btn')];
-
-        productContainers.forEach((item, i) => {
-          let containerDimenstions = item.getBoundingClientRect();
-          let containerWidth = containerDimenstions.width;
-
-          nxtBtn[i].addEventListener('click', () => {
-            item.scrollLeft += containerWidth;
-          })
-
-          preBtn[i].addEventListener('click', () => {
-            item.scrollLeft -= containerWidth;
-          })
-        })
-      </script>
-
-      <section class="product-details">
-        <div class="image-slider">
-          <div class="product-images">
-            <img src="racao_canina_seca1.jfif" class="active" alt="">
-            <br>
-            <img src="racao_canina_seca2.jfif" alt="">
-            <br>
-            <img src="racao_canina_umida.jfif" alt="">
-            <br>
-            <img src="racao_canina_umida_2.jfif" alt="">
-          </div>
-        </div>
+      <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>   
+                   
     </section>
-
-
-    <!-- collections -->
-     <br><br></br><br><br>
-    <section class="collection-container">
-      <a href="#" class="collection">
-        <img src="cao_lindo.png" alt="">
-        <p class="collection-title">Ração Canina<br>pronta entrega</p>
-      </a>
-      <a href="#" class="collection">
-        <img src="gato_lindo.png" alt="">
-        <p class="collection-title">Ração Felina<br>pronta entrega</p>
-      </a>      
-    </section>
-
-    <section>
-      // image slider
-      <div class="details">
-           <h2 class="product-brand">calvin klein</h2>
-           <p class="product-short-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-           <span class="product-price">$99</span>
-           <span class="product-actual-price">$200</span>
-           <span class="product-discount">( 50% off )</span>  
-           
-   
-           <button class="btn cart-btn">Incluir no Carrrinho</button>
-           <button class="btn">Acrescentar à Lista de Desejos</button>
-       </div>
-
-    
-    
-          
-    </section>
-      <script>
-        const productImages = document.querySelectorAll(".product-images img"); // selecting all image thumbs
-        const productImageSlide = document.querySelector(".image-slider"); // seclecting image slider element
-
-        let activeImageSlide = 0; // default slider image
-
-        productImages.forEach((item, i) => { // loopinh through each image thumb
-          item.addEventListener('click', () => { // adding click event to each image thumbnail
-            productImages[activeImageSlide].classList.remove('active'); // removing active class from current image thumb
-            item.classList.add('active'); // adding active class to the current or clicked image thumb
-            productImageSlide.style.backgroundImage = `url('${item.src}')`; // setting up image slider's background image
-          activeImageSlide = i; // updating the image slider variable to track current thumb
-          })
-        })
-      </script>
-
-
-      <!--toggle size buttons-->
-      <script>     
-
-      const sizeBtns = document.querySelectorAll('.size-radio-btn'); // selecting size buttons
-      let checkedBtn = 0; // current selected button
-      
-      sizeBtns.forEach((item, i) => { // looping through each button
-          item.addEventListener('click', () => { // adding click event to each 
-              sizeBtns[checkedBtn].classList.remove('check'); // removing check class from the current button
-              item.classList.add('check'); // adding check class to clicked button
-              checkedBtn = i; // upading the variable
-          })
-      })
-      </script>
-      <!--CARRINHOS DOS PRODUTOS-->
-      <section class="search-results">
-      <h2 class="heading">Busque resultados na categoria <span>Ração Canina</span></h2>
-      <h2 class="heading">Busque resultados na categoria <span>Ração Felina</span></h2>
-      <h2 class="heading">Busque resultados por <span>Marca</span></h2>
-      <h2 class="heading">Busque resultados por <span>Tipo de apresentação</span></h2>
-      <h2 class="heading">Busque resultados por <span>Preço</span></h2>
-      </section>
-
     <!--SERVIÇOS -->
-    <section class="servicos"> 
+    <section class="servicos" id="confServicos"> 
       
       <div class="sobre-servicos">
         <br><br><br>
-        <h2><center>Serviços:<br><br>Agendamento On-line de Banho e/ou Tosa, <br>com opção de Táxi Pet com Tutor</center></h2>
+        <h2><center>Serviços:<br>Agendamento On-line de Banho e/ou Tosa, com opção de Táxi Pet com Tutor</center></h2>
         <br>
         <p> Oferecemos o transporte de cães e gatos, acompanhados obrigatoriamente de seus tutores, para serviços de banho e tosa conosco. O serviço é realizado em veículos modelo Fiat Fiorino Furgão. As caixas de transporte devidamente higienizadas após cada viagem e serão oferecidas para a hipótese do tutor não possuir sua própria caixa de transporte. Os  motoristas passam por treinamento para garantir a segurança de todos os passageiros, tutores e seus pets. Confira nossa Tabela de Preços abaixo e AGENDE agora nossos serviços combinados de Banho-Tosa-Taxi Pet e Tutor. </p>
         <center>
         
-        <div class="col-sm-6">
-          <h2> Precisando de um banho ou tosa?</h2>
+        <div>
+          <h2> Alguém está precisando de um embelezamento pet?</h2>
           <br><br>
           <center><img src ="pets_na_lama.jpg" alt="foto de canino (labrador) e gato (na cabeça do canino) brincando na lama"</center>
            <br><br><br>
         </div> 
-
-        
+       
           
         <table>
           <br><br>
@@ -1054,7 +629,7 @@ img {vertical-align: middle;}
               </tr>
           </thead>
           <tbody>
-              <tr style: background-color:rgb(241,250,252)>
+              <tr>
                   <td>1</td>
                   <td>Banho</td>
                   <td>Pequeno (até 10 kg)</td>
@@ -1149,6 +724,7 @@ img {vertical-align: middle;}
 
       <!--Carrousel de imagens, com botão Previous e Next-->
       <center>
+      <h5><center>Clique na seta à esquerda ou à direita para mudar as fotos no Carrossel de imagens abaixo!</center></h5>
       <div id="carouselControls" class="imagem carousel slide" data-ride="carousel">                            
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -1173,6 +749,7 @@ img {vertical-align: middle;}
     <section class="agendamento_servico" 
       <div>
         <br><br> 
+        <center>
         <form action="https://formsumit.co/email@email.com" method="POST">
           <fieldset>
             <br><br>
@@ -1214,16 +791,20 @@ img {vertical-align: middle;}
           <br><br>
           <center><label>Agende agora:</label></center>
           <br>
-          <center><li class="mapa_do_site_links">Mapa de navegação:</li>    
+          <button type="submit">Agendar</button>
+             
+        
           <br><br>        
         </form>
+        </center>
       </div>   
     
     </section>
 
     <!--CADASTRO (DE CLIENTES E SEU PET)-->
-    <section class="cadastro" 
+    <section class="cadastro" id="confCadastro">
       <br><br>
+      <center>
       <div> 
         <br><br>
         <h2><center><bold>Meu cadastro:</bold></center></h2>
@@ -1344,37 +925,24 @@ img {vertical-align: middle;}
             <button type="reset">Apagar</button>            
             <br><br>        
           </form>    
-    </div>   
-    <!--LOGIN NO SISTEMA-->
-
-    <section class="login" 
-      <div> 
-        <br><br>
-        <h2><center><bold>Meu login:</bold></center></h2>        
-        <form action="https://formsumit.co/email@email.com" method="POST">
-          <fieldset>
-            <legend>Faça seu <italic>login</italic> no sistema:</legend>
-            <input type="email" name="email" placeholder="Digite seu e-mail"  pattern="emailObject.placeholder" size="40"required/>  
-            <input type="password" name="senha" placeholder="Digite sua senha" pattern="[A-Za-z]{8,}" minlength="8" required/>  
-            <button type="submit">Login</button>            
-            <br><br><br>
-          </fieldset>
-        </form>
-      </div>
-    </section>
+    </div>
+    </center>
+    <br><br>   
+    
     <!--FALE CONOSCO (formulario)-->
-    <section class="faleconosco">
+    <section class="faleconosco" id="confFale">
       <div> 
         <br><br>
-        <h2><center><strong>Fale conosco:</strong></center></h2>
-        <p><strong>Fone(WhatsApp):</strong> 51 - 99999999   -    <strong>E-mail:</strong>POApetShop@emailProjeto.com</p>        
-        <p><strong>Loja Física:</strong> Rua Dr. Barros Cassal, 54, Bom Fim, Porto Alegre, CEP: 90035-032</p>
-        <a href="mailto:POApetShop@emailProjeto.com?cc=fulano@mail.com&bcc=beltrano@mail.com&subject= contato via canal de e-mail do site">Clique aqui para entrar em contato via e-mail!</a>
+        <h3><center><strong>Fale conosco:</strong></center></h3>
+        <p><center><strong>Fone(WhatsApp):</strong> 51 - 99999999   -    <strong>E-mail:</strong>POApetShop@emailProjeto.com </center></p>        
+        <p><center><strong>Loja Física:</strong> Rua Dr. Barros Cassal, 54, Bom Fim, Porto Alegre, CEP: 90035-032 </center></p>
+        <center><a href="mailto:POApetShop@emailProjeto.com?cc=fulano@mail.com&bcc=beltrano@mail.com&subject= contato via canal de e-mail do site">Clique aqui para entrar em contato via e-mail!</a></center>
         <br><br>
+        <center>
         <form action="https://formsumit.co/email@email.com" method="POST">
         <fieldset>
           <br><br><br>          
-          <legend>Nos contate preenchendo o formulário abaixo</legend>
+          <legend>Nos contate preenchendo o formulário abaixo!</legend>
           <label>Nome completo:</label>
           <input type="text" name="Nome" placeholder="Digite seu Nome Completo" class="class_input_name" required autofocus/>
           <br><br>
@@ -1388,56 +956,66 @@ img {vertical-align: middle;}
           </center>
           <br><br>
         </fieldset>
+        </center>
         </form>
       </div>
      
     <!--FOOTER (RODAPÉ): contato, links de navegacao e autoria -->
-    <section class="footer-conteudo"> 
+    <section class="footer-conteudo" id="confFooter"> 
+      <br><br>
+      <center>
       <img src="logoPetShop.png"> 
+      <br>
       <p class="footer-title"><strong>Nosso contato:</strong></p>
       <p class="info"><strong>Fone(WhatsApp):</strong>051-99999999</strong></p>
       <p class="info"><strong>E-mail:</strong>POApetShop@emailProjeto.com</strong></p>
-      <p class="info"><strong>Loja de Banho e Tosa Física:</strong>Rua Dr. Barros Cassal, 54, Bom Fim, Porto Alegre, CEP: 90035-032</p>
+      <p class="info"><strong>Loja Física de Banho e Tosa:</strong>Rua Dr. Barros Cassal, 54, Bom Fim, Porto Alegre, CEP: 90035-032</p>
+      </center>
      
       <div class="footer-ul-container">
         <ul class="mapa_do_site">
           <li class="mapa_do_site_links"></li>
-          
-          <li><a href="#./index.html">Página inicial</a></li>
-          <li><a href="#./pages/sobre.html">Sobre nós</a></li>
-          <li><a href="#./pages/produtos.html">Produtos</a></li> 
-          <li><a href="#./pages/servicos.html">Serviços</a></li>
-          <li><a href="#./pages/cadastro.html">Meu cadastro</a></li>
-          <li><a href="#./pages/login.html">Login</a></li>
+          <center>
+          <li class="mapa_do_site_links">Mapa de navegação:</li>           
+          <li><a href="./index.html">Página inicial</a></li>
+          <li><a href="./pages/sobre.html">Sobre nós</a></li>
+          <li><a href="./pages/produtos.html">Produtos</a></li> 
+          <li><a href="./pages/servicos.html">Serviços</a></li>
+          <li><a href="./pages/cadastro.html">Meu cadastro</a></li> 
+          </center>         
           
         </ul>      
       </div> 
       
-      <div class="footer_form_correspondencia">   
+      <div class="footer_form_correspondencia"> 
+        <center>  
         <form action="https://formsumit.co/email@email.com" method="POST">
           <fieldset>
             <br>
             <legend>Assine nossa Newsletter para receber dicas e promoções!</legend>
             <label>E-mail:</label>
-            <input type="email" name="email" placeholder="Digite seu e-mail" pattern="emailObject.placeholder" size="40"required><br><br>
-            <input class="button " type="submit">
+            <input type="email" name="email" placeholder="Digite seu e-mail" pattern="emailObject.placeholder" size="40"required><br><br>            
+            <button type="submit">Assinar</button>
             <br><br><br><br>
           </fieldset>          
         </form>
+        </center>
     
       </div>  
-      <div class="footer-social-container">        
+      <div class="footer-social-container"> 
+        <center>      
         <div>
-            <a href="#" class="social-link">instagram</a>
-            <a href="#" class="social-link">facebook</a>
-            <a href="#" class="social-link">twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
         </div>
+        </center> 
       </div>
      
       
-      <div class="css_footer">          
-        <hr> 
-        <p>POA Pet Shop - Desenvolvido por LauraOEd em Set/2024 - Direitos reservados.</p>
+      <div class="booton-footer" id="confBottomFooter">          
+        <hr>         
+        <center><p>copyright &copy;2024<a href=”#”>LauraOEd</a>Projeto de Sistemas Web: POA Pet Shop.</p></center>
         <hr>
       </div>
       <br>
